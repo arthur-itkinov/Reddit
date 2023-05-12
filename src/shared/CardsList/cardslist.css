@@ -1,0 +1,16 @@
+@media all and (min-width: 1024px) {
+  .cardsList {
+    padding: 40px 0;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .card {
+    padding: 20px 60px;
+    max-height: 147px;
+    cursor: pointer;
+  }
+  .card:hover, .card:focus-within {
+    outline: 1px solid var(--grey-demi-dark);
+  }
+}
