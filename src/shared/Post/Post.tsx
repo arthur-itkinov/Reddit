@@ -10,6 +10,7 @@ import { CommentControls } from './Comment/CommentControls';
 import axios from 'axios';
 import { tokenContext } from '../../context/tokenContext';
 import { usePostComments } from '../../hooks/usePostComments';
+import { CommentFormContainer } from '../CommentFormContainer';
 
 
 
@@ -51,7 +52,7 @@ export function Post(props: IPost) {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt alias aliquid dolore dicta accusantium nam saepe tempora blanditiis fuga, molestiae, aliquam quam quibusdam nisi dolores cum est magni esse labore.</p>     
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt alias aliquid dolore dicta accusantium nam saepe tempora blanditiis fuga, molestiae, aliquam quam quibusdam nisi dolores cum est magni esse labore.</p>
       </div>
-      <CommentForm/>
+      <CommentFormContainer/>
       <SortingComments/>
       {postComments.map(comment => (
         <Comment
